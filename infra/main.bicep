@@ -9,6 +9,10 @@ param environmentName string
 @description('Primary location for all resources')
 param location string
 
+minLength(1)
+@description('Resource group')
+param resourceGroupName string
+
 // Optional parameters to override the default azd resource naming conventions. Update the main.parameters.json file to provide values. e.g.,:
 // "resourceGroupName": {
 //      "value": "myGroupName"
@@ -21,7 +25,6 @@ param cosmosAccountName string = ''
 param cosmosDatabaseName string = ''
 param keyVaultName string = ''
 param logAnalyticsName string = ''
-param resourceGroupName string = ''
 param storageAccountName string = ''
 param webServiceName string = ''
 param apimServiceName string = ''
