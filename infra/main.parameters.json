@@ -14,7 +14,7 @@
     "useAPIM": {
       "value": "${USE_APIM=false}"
     },
-    "resourcegroup": {
+    "resourceGroupName": {
       "value": "${AZURE_RESOURCEGROUPNAME}"
     }
   }
